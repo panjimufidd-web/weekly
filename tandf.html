@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Mahasiswa</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container{
+            width: 60%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td{
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        input, textarea, select{
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .submit-btn{
+            background-color: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-btn:hover{
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Data Mahasiswa</h2>
+
+    <form>
+
+        <table>
+
+            <tr>
+                <td>Nama</td>
+                <td>
+                    <input type="text" name="nama"
+                    value="Panji Mufid Saifuddin">
+                </td>
+            </tr>
+
+            <tr>
+                <td>NIM</td>
+                <td>
+                    <input type="number" name="nim"
+                    value="13242520054">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="password"
+                    value="rahasia">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="email"
+                    value="panjisaifuddin@gmail.com">
+                </td>
+            </tr>
+
+            <tr>
+                <td>No HP</td>
+                <td>
+                    <input type="tel" name="nohp"
+                    value="0881-2751-613">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Website Pribadi</td>
+                <td>
+                    <input type="url" name="website"
+                    value="https://www.instagram.com/panjimufidd?igsh=MWlrNG1nMnVwampqcQ==">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tanggal Lahir</td>
+                <td>
+                    <input type="date" name="tanggal"
+                    value="2006-12-06">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Warna Favorit</td>
+                <td>
+                    <input type="color" name="warna">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Tingkat Kepuasan</td>
+                <td>
+                    <input type="range" name="kepuasan"
+                    min="0" max="100">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td>
+                    <input type="radio" name="jk" checked> Laki-laki
+                    <input type="radio" name="jk"> Perempuan
+                </td>
+            </tr>
+
+            <tr>
+                <td>Hobi</td>
+                <td>
+                    <input type="checkbox" checked> Membaca
+                    <input type="checkbox"> Gaming
+                    <input type="checkbox"> Olahraga
+                </td>
+            </tr>
+
+            <tr>
+                <td>Upload Foto</td>
+                <td>
+                    <input type="file" name="foto">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Alamat</td>
+                <td>
+                    <textarea rows="4">
+Mugassari, Semarang
+                    </textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Jurusan</td>
+                <td>
+                    <select name="jurusan">
+                        <option selected>
+                            Teknologi Informasi
+                        </option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Komputer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <button type="submit" class="submit-btn">
+                        Submit
+                    </button>
+                </td>
+            </tr>
+
+        </table>
+
+    </form>
+</div>
+
+</body>
+</html>
