@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panji Mufid</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#0077cc;
+            color:white;
+            text-align:center;
+            padding:25px;
+        }
+
+        nav{
+            background:#005fa3;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            justify-content:center;
+        }
+
+        nav ul li{
+            margin:0 15px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            display:block;
+            padding:15px;
+        }
+
+        nav ul li a:hover{
+            background:#004d85;
+        }
+
+        .hero{
+            text-align:center;
+            padding:50px;
+            background:white;
+        }
+
+        .hero h2{
+            color:#0077cc;
+            margin-bottom:10px;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin-bottom:20px;
+            border-radius:10px;
+            box-shadow:0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(3,1fr);
+            gap:10px;
+        }
+
+        .gallery img{
+            width:100%;
+            border-radius:10px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        table, th, td{
+            border:1px solid #ccc;
+        }
+
+        th{
+            background:#0077cc;
+            color:white;
+        }
+
+        th, td{
+            padding:10px;
+            text-align:center;
+        }
+
+        form input,
+        form textarea{
+            width:100%;
+            padding:10px;
+            margin:8px 0;
+        }
+
+        button{
+            background:#0077cc;
+            color:white;
+            border:none;
+            padding:10px 20px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#005fa3;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>Panji Mufid</h1>
+        <p>Website Pribadi dan Portofolio</p>
+    </header>
+
+    <!-- MENU -->
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Galeri</a></li>
+            <li><a href="#">Artikel</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h2>Selamat Datang di Website Panji Mufid</h2>
+        <p>Berisi informasi pribadi, galeri, artikel, dan kontak.</p>
+    </section>
+
+    <div class="container">
+
+        <!-- PROFIL -->
+        <div class="card">
+            <h2>Tentang Saya</h2>
+            <p>
+                Halo! Saya Panji Mufid. Website ini dibuat untuk
+                menampilkan profil, kegiatan, karya, dan informasi kontak.
+            </p>
+        </div>
+
+        <!-- DATA DIRI -->
+        <div class="card">
+            <h2>Data Diri</h2>
+
+            <table>
+                <tr>
+                    <th>Nama</th>
+                    <th>Umur</th>
+                    <th>Kota</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>Panji Mufid</td>
+                    <td>18 Tahun</td>
+                    <td>Semarang</td>
+                    <td>Mahasiswa/Pelajar</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- GALERI -->
+        <div class="card">
+            <h2>Galeri Foto</h2>
+
+            <div class="gallery">
+                <img src="https://via.placeholder.com/300" alt="Foto 1">
+                <img src="https://via.placeholder.com/300" alt="Foto 2">
+                <img src="https://via.placeholder.com/300" alt="Foto 3">
+            </div>
+        </div>
+
+        <!-- ARTIKEL -->
+        <div class="card">
+            <h2>Artikel Terbaru</h2>
+
+            <h3>Belajar HTML Dasar</h3>
+            <p>
+                HTML merupakan bahasa markup yang digunakan untuk
+                membuat struktur halaman website.
+            </p>
+
+            <br>
+
+            <h3>Belajar CSS</h3>
+            <p>
+                CSS digunakan untuk mempercantik tampilan website
+                agar lebih menarik dan profesional.
+            </p>
+        </div>
+
+        <!-- SKILL -->
+        <div class="card">
+            <h2>Keahlian</h2>
+
+            <ul>
+                <li>HTML ⭐⭐⭐⭐⭐</li>
+                <li>CSS ⭐⭐⭐⭐</li>
+                <li>JavaScript ⭐⭐⭐</li>
+                <li>Microsoft Office ⭐⭐⭐⭐⭐</li>
+            </ul>
+        </div>
+
+        <!-- FORM KONTAK -->
+        <div class="card">
+            <h2>Hubungi Saya</h2>
+
+            <form>
+                <input type="text" placeholder="Nama Lengkap">
+
+                <input type="email" placeholder="Email">
+
+                <textarea rows="5" placeholder="Pesan"></textarea>
+
+                <button type="submit">
+                    Kirim Pesan
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Panji Mufid</h3>
+        <p>Email : panjimufid@email.com</p>
+        <p>Instagram : @panjimufid</p>
+        <p>&copy; 2025 All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
