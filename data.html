@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB TI PANJI - 2026</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #0066cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #004c99;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+            border-radius: 5px;
+        }
+
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 2px 8px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        .foto {
+            text-align: center;
+        }
+
+        .foto img {
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        .skill {
+            margin-top: 10px;
+        }
+
+        .bar {
+            background: #ddd;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+        .nilai {
+            background: #0066cc;
+            color: white;
+            padding: 5px;
+            text-align: center;
+        }
+
+        form input,
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+        }
+
+        button {
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #004c99;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        #jam {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>WEB TI PANJI - 2026</h1>
+        <p>Website Mahasiswa Teknologi Informasi</p>
+
+        <div id="jam"></div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="contact.html">Contact</a>
+        <a href="mahasiswa.html">Mahasiswa</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- FOTO -->
+        <div class="card foto">
+            <h2>Foto Profil</h2>
+            <img src="img/images.jpg" alt="Panji Mufid">
+        </div>
+
+        <!-- BIODATA -->
+        <div class="card">
+            <h2>Biodata Mahasiswa</h2>
+
+            <table>
+                <tr>
+                    <th>Data</th>
+                    <th>Keterangan</th>
+                </tr>
+
+                <tr>
+                    <td>Nama</td>
+                    <td>Panji Mufid Saifuddin</td>
+                </tr>
+
+                <tr>
+                    <td>NIM</td>
+                    <td>1324250054</td>
+                </tr>
+
+                <tr>
+                    <td>Program Studi</td>
+                    <td>Teknologi Informasi</td>
+                </tr>
+
+                <tr>
+                    <td>Asal Kota</td>
+                    <td>Semarang</td>
+                </tr>
+
+                <tr>
+                    <td>Tahun Lahir</td>
+                    <td>2006</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- DESKRIPSI -->
+        <div class="card">
+            <h2>Tentang Saya</h2>
+
+            <p>
+                Halo, perkenalkan nama saya
+                <b>Panji Mufid Saifuddin</b>.
+                Saya merupakan mahasiswa Program Studi
+                Teknologi Informasi Universitas Muhammadiyah Semarang (UNIMUS).
+
+                Saya berasal dari Semarang dan memiliki minat pada bidang
+                teknologi, pemrograman, pengembangan website, serta desain
+                sistem informasi.
+            </p>
+        </div>
+
+        <!-- DATA MAHASISWA -->
+        <div class="card">
+            <h2>Data Mahasiswa</h2>
+
+            <table>
+                <tr>
+                    <th>No</th>
+                    <th>Mata Kuliah</th>
+                    <th>SKS</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Pemrograman Web</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Basis Data</td>
+                    <td>3</td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Jaringan Komputer</td>
+                    <td>3</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- SKILL -->
+        <div class="card">
+            <h2>Keahlian</h2>
+
+            <div class="skill">
+                HTML
+                <div class="bar">
+                    <div class="nilai" style="width:90%;">90%</div>
+                </div>
+
+                CSS
+                <div class="bar">
+                    <div class="nilai" style="width:80%;">80%</div>
+                </div>
+
+                JavaScript
+                <div class="bar">
+                    <div class="nilai" style="width:70%;">70%</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- KONTAK -->
+        <div class="card">
+            <h2>Hubungi Saya</h2>
+
+            <form>
+                <input type="text" placeholder="Nama Lengkap">
+
+                <input type="email" placeholder="Email">
+
+                <textarea rows="5" placeholder="Tulis pesan Anda"></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 - Panji Mufid Saifuddin | Teknologi Informasi</p>
+    </footer>
+
+    <script>
+        function tampilJam() {
+            let waktu = new Date();
+
+            let jam = waktu.getHours();
+            let menit = waktu.getMinutes();
+            let detik = waktu.getSeconds();
+
+            document.getElementById("jam").innerHTML =
+                "Waktu Saat Ini : " +
+                jam + ":" + menit + ":" + detik;
+        }
+
+        setInterval(tampilJam, 1000);
+    </script>
+
+</body>
+
+</html>
